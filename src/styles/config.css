@@ -1,0 +1,4 @@
+:root {
+    --base-gradient: linear-gradient(to right, #000, #1f1f1f);
+    --active-dim: 0.5
+}

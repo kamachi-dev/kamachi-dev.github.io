@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-link {
+    transition: 0.2s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-link.active>.navigation-label {
+    color: rgb(calc(255 * var(--active-dim)),
+            calc(255 * var(--active-dim)),
+            calc(255 * var(--active-dim)));
+}
+
+.navigation-link.active>.navigation-icon {
+    filter: invert() brightness(calc(100% * var(--active-dim)));
+}
+
+.navigation-icon {
+    filter: invert();
+    height: 1em;
+}
+
+.navigation-label {
+    margin-left: 5px;
+    margin: 0;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .navigation-label {
+        display: none;
+    }
+}
