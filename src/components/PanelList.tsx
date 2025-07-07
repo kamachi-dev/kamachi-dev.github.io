@@ -12,7 +12,7 @@ function PanelList({ items }: Props) {
         return (
             <li ref={ref} className={'rainbowItems-border ' + (inView ? 'show' : 'hide')}>
                 <img src='/assets/images/link.png' alt='link' className={'panel-link ' + ((link == '') ? 'hidden' : 'show')} />
-                <div className='rainbowItems-content'><a href={link}>{html}</a></div>
+                <div className='rainbowItems-content'><a href={link == '' ? 'javascript: void(0)' : link}>{html}</a></div>
             </li>
         );
     });
