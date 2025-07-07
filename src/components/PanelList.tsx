@@ -7,15 +7,18 @@ interface Props {
 }
 
 function PanelList({ items }: Props) {
-    const [ref, inView] = useInView({ threshold: 1 })
+    const elems = items.map(([html, link]) => {
+        const [ref, inView] = useInView({ threshold: 1 });
+        return (
+            <li ref={ref} className={'rainbowItems-border ' + (inView ? 'show' : 'hide')}>
+                <img src='/assets/images/link.png' alt='link' className={'panel-link ' + ((link == '') ? 'hidden' : 'show')} />
+                <div className='rainbowItems-content'><a href={link}>{html}</a></div>
+            </li>
+        );
+    });
     return (
-        <ul className='rainbowItems' ref={ref}>
-            {items.map(([html, link]) =>
-                <li className={'rainbowItems-border ' + (inView ? 'show' : 'hide')}>
-                    <img src='/assets/images/link.png' alt='link' className={'panel-link ' + ((link == '') ? 'hidden' : 'show')} />
-                    <div className='rainbowItems-content'><a href={link}>{html}</a></div>
-                </li>
-            )}
+        <ul className='rainbowItems'>
+            {elems}
         </ul>
     )
 }
