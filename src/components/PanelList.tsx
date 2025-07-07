@@ -8,7 +8,7 @@ interface Props {
 
 function PanelList({ items }: Props) {
     const elems = items.map(([html, link]) => {
-        const [ref, inView] = useInView({ threshold: 1 });
+        const [ref, inView] = useInView({ threshold: 0.8 });
         return (
             <li ref={ref} className={'rainbowItems-border ' + (inView ? 'show' : 'hide')}>
                 <img src='/assets/images/link.png' alt='link' className={'panel-link ' + ((link == '') ? 'hidden' : 'show')} />
