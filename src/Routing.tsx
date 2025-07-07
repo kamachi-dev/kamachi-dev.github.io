@@ -5,7 +5,8 @@ import {
 import {
     Home,
     Education,
-    Skills
+    Skills,
+    Contacts
 } from './pages';
 
 export default function Routing() {
@@ -15,6 +16,7 @@ export default function Routing() {
             <Route path='/' element={<Home />} />
             <Route path='/education' element={<Education />} />
             <Route path='/skills' element={<Skills />} />
+            <Route path='/contacts' element={<Contacts />} />
         </Routes>
     );
 }

@@ -1,7 +1,7 @@
 .video-section {
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 200px;
+    margin-left: 10%;
 }
 
 .video-container {
@@ -19,4 +19,20 @@
     display: block;
     position: relative;
     z-index: 1;
+}
+
+.info {
+    font-family: sans-serif;
+}
+
+.info-hello {
+
+}
+
+.info-name {
+
+}
+
+.info-roles {
+
 }

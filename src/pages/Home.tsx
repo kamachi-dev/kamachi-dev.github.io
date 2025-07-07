@@ -62,9 +62,9 @@ function Home() {
         <>
             <section className="video-section">
                 <div className="info">
-                    <h1>Hello!</h1>
-                    <h2>My name is Kamachi</h2>
-                    <p id="roles">
+                    <h1 className='info-hello'>Hello!</h1>
+                    <h2 className='info-name'>My name is Kamachi</h2>
+                    <p className='info-roles' id="roles">
                         {displayed}<span className='cursor'>|</span>
                     </p>
                 </div>
