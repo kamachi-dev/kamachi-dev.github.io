@@ -1,0 +1,8 @@
+.panel-link {
+    width: 15px;
+    aspect-ratio: 1/1;
+}
+
+.panel-link.hidden {
+    display: none;
+}
