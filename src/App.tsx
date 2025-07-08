@@ -1,6 +1,6 @@
 // packages
 import {
-    BrowserRouter
+    HashRouter
 } from 'react-router-dom';
 import {
     useMediaQuery
@@ -22,13 +22,13 @@ export default function App() {
 
     return (
         <>
-            <BrowserRouter>
+            <HashRouter>
                 {
                     isPortrait ?
                         <Portrait header={<Header />} footer={<Footer />} routes={<Routing />} /> :
                         <Landscape header={<Header />} footer={<Footer />} routes={<Routing />} />
                 }
-            </BrowserRouter>
+            </HashRouter>
         </>
     );
 }
