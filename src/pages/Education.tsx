@@ -4,11 +4,14 @@ import {
 function Education() {
     const achievements: [React.ReactElement, string][] = [
         [<>
+            <h5>A date with python 2023, top 2</h5>
+        </>, 'https://www.facebook.com/share/p/1AmivJU6vW/'],
+        [<>
             <ul>
                 <li>Hackaton</li>
                 <li>A date with python 2023</li>
             </ul>
-        </>, 'Contests']
+        </>, 'https://www.facebook.com/share/p/1AmivJU6vW/']
     ]
     const google: [React.ReactElement, string][] = [
         [<>
