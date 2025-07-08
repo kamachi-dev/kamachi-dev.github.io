@@ -1,6 +1,7 @@
 import {
     Routes,
-    Route
+    Route,
+    Navigate
 } from 'react-router-dom';
 import {
     Home,
@@ -17,6 +18,7 @@ export default function Routing() {
             <Route path='/education' element={<Education />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/contacts' element={<Contacts />} />
-        </Routes>
+            <Route path="*" element={<Navigate to="/" />} />
+        </Routes >
     );
 }

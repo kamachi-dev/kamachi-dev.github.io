@@ -22,7 +22,7 @@ export default function App() {
 
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename='https://kamachi-dev.github.io'>
                 {
                     isPortrait ?
                         <Portrait header={<Header />} footer={<Footer />} routes={<Routing />} /> :
