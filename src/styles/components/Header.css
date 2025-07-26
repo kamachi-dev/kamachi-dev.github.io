@@ -28,6 +28,12 @@
     height: 100%
 }
 
+@media (max-width: 590px) {
+    .header-logoContainer {
+        display: none;
+    }
+}
+
 .header-logoContainer>a {
     margin-left: 5px;
     height: 100%;

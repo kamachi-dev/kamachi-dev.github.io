@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
 
-    background-image: linear-gradient(to right, gold, gray, gold);
+    background-image: var(--glow-gradient);
 
     background-size: 200%;
     margin: 0px 5px 0px 5px;

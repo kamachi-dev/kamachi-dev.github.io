@@ -1,27 +1,36 @@
 // packages
-import {
-    BrowserRouter
-} from 'react-router-dom';
-import {
-    useMediaQuery
-} from 'react-responsive';
+import { BrowserRouter } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
+import type { User } from '@supabase/supabase-js';
 
 // tsx
-import {
-    Portrait,
-    Landscape
-} from './layouts';
 import Routing from './Routing';
+import { Portrait, Landscape } from './layouts';
+import { AppContext } from "./AppContext";
 
 //styles
 import './styles/App.css';
 import { Header, Footer } from './components';
+import { useEffect, useState } from 'react';
+import { supabase } from './services/client';
 
 export default function App() {
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' });
+    const [user, setUser] = useState<User | null>(null)
+
+    async function getUser() {
+        const { data } = await supabase.auth.getUser();
+        setUser(data.user);
+    }
+
+    useEffect(() => {
+        getUser();
+    }, []);
 
     return (
-        <>
+        <AppContext.Provider value={{
+            user: user
+        }}>
             <BrowserRouter>
                 {
                     isPortrait ?
@@ -29,6 +38,6 @@ export default function App() {
                         <Landscape header={<Header />} footer={<Footer />} routes={<Routing />} />
                 }
             </BrowserRouter>
-        </>
+        </AppContext.Provider>
     );
 }

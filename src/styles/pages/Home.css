@@ -23,16 +23,11 @@
 
 .info {
     font-family: sans-serif;
+    font-size: 2vw;
 }
 
-.info-hello {
+.info-hello {}
 
-}
+.info-name {}
 
-.info-name {
-
-}
-
-.info-roles {
-
-}
+.info-roles {}

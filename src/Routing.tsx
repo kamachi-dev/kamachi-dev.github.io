@@ -7,7 +7,8 @@ import {
     Home,
     Education,
     Skills,
-    Contacts
+    Contacts,
+    LogIn
 } from './pages';
 
 export default function Routing() {
@@ -17,6 +18,7 @@ export default function Routing() {
             <Route path='/education' element={<Education />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/contacts' element={<Contacts />} />
+            <Route path="/login" element={<LogIn />} />
             <Route path="*" element={<Navigate to="/" />} />
         </Routes >
     );

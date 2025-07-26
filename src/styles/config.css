@@ -1,4 +1,6 @@
 :root {
+    --gold: #FFD700;
     --base-gradient: linear-gradient(to right, #000, #1f1f1f);
+    --glow-gradient: linear-gradient(to right, gold, gray, gold);
     --active-dim: 0.5
 }
