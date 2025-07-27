@@ -69,7 +69,7 @@ function Home() {
                     </p>
                 </div>
                 <div className="video-container">
-                    <video src="/assets/videos/montage.mp4" autoPlay loop muted></video>
+                    <video src="/assets/videos/montage.mp4" autoPlay loop muted playsInline></video>
                 </div>
             </section>
             <Divider />
