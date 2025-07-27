@@ -26,6 +26,26 @@
     font-size: 2vw;
 }
 
+@media (max-width: 768px) {
+    .video-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .video-container {
+        width: 100%;
+        height: calc(100vh - 52px * 2);
+        mask-image: none;
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%);
+    }
+
+    .info {
+        padding: 10% 0 10% 0;
+        font-size: 4vw;
+    }
+}
+
 .info-hello {}
 
 .info-name {}
