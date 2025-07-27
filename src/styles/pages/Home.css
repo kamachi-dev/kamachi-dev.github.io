@@ -26,7 +26,7 @@
     font-size: 2vw;
 }
 
-@media (max-width: 768px) {
+@media (max-aspect-ratio: 1/1) {
     .video-section {
         flex-direction: column-reverse;
         align-items: center;
