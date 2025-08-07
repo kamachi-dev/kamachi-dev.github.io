@@ -13,7 +13,7 @@
 
 #content {
     flex-direction: column;
-    min-height: calc(100dvh - 52px * 2);
+    flex: 1;
     overflow-y: scroll;
 }
 

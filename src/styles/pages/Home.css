@@ -10,7 +10,7 @@ section {
 
 .video-container {
     width: 70%;
-    height: calc(100dvh - 2em);
+    height: calc(100dvh - 104px);
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%)
 }
 
