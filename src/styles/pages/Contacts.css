@@ -2,3 +2,71 @@
     width: 100px;
     filter: invert();
 }
+
+.message-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.message-title {
+    font-size: 3em;
+    margin: 10px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    flex: 1;
+}
+
+.message {
+    display: flex;
+    margin: 10px 0px;
+    width: 60%;
+}
+
+.message-text {
+    font-size: 1.5em;
+    margin: 0;
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message.sender {
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.message.sender>.message-text {
+    margin-left: 10px;
+    background-color: darkslategray;
+}
+
+.message.reciever {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.message.reciever>.message-text {
+    margin-right: 10px;
+    background-color: darkslateblue;
+}
+
+.message-pfp {
+    margin-top: 10px;
+    height: calc(1.5em + 20px);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.message-textbox {
+    background-color: black;
+    width: 80%;
+    font-size: 1.5em;
+    padding: 10px 10px;
+    border: 2px solid darkturquoise;
+    border-radius: 5px;
+}

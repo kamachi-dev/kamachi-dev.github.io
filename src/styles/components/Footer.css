@@ -9,6 +9,11 @@
 .footer-account {
     height: 100%;
     display: flex;
+    align-items: center;
+}
+
+.footer-username {
+    margin: 0;
 }
 
 .footer-link {

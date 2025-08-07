@@ -1,14 +1,16 @@
 .video-section {
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 3%;
+    padding: 0;
+}
+
+section {
+    height: fit-content;
 }
 
 .video-container {
-    position: relative;
-    /* Needed for absolute positioning of overlay */
     width: 70%;
-    height: calc(100dvh - 52px * 2);
+    height: calc(100dvh - 2em);
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%)
 }
 
@@ -17,7 +19,6 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    position: relative;
     z-index: 1;
 }
 

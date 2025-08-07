@@ -1,4 +1,5 @@
 import {
+    Divider,
     PanelList
 } from '../components'
 
@@ -22,7 +23,24 @@ function Contacts() {
     ]
     return (
         <>
-            <PanelList items={items} />
+            <section>
+                <PanelList items={items} />
+            </section>
+            <Divider />
+            <section className='message-form'>
+                <h1 className='message-title'>Quick Contact</h1>
+                <div className='message-container'>
+                    <div className='message sender'>
+                        <img className='message-pfp' src='/assets/images/contacts.png' alt='you' />
+                        <p className='message-text'>For further inquiries, please message below. Expect a reply within a day, thank you.</p>
+                    </div>
+                    <div className='message reciever'>
+                        <img className='message-pfp' src='/assets/images/contacts.png' alt='you' />
+                        <p className='message-text'>Test2</p>
+                    </div>
+                </div>
+                <input className='message-textbox' placeholder='Good day, I...' />
+            </section>
         </>
     )
 }
