@@ -45,6 +45,12 @@ section {
     transform: scale(1.2);
 }
 
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @keyframes blink {
     0% {
         opacity: 1;

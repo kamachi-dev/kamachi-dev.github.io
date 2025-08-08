@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
     Divider,
     PanelList
@@ -21,12 +22,14 @@ function Contacts() {
             <img className='contact-logo' src='/assets/images/email.png' alt='gmail' />
             , 'mailto:Angelo.kamachi03@gmail.com'],
     ]
+    useEffect(() => {
+        document.getElementById("content")?.classList.add("flex-content");
+        return () => {
+            document.getElementById("content")?.classList.remove("flex-content");
+        }
+    }, []);
     return (
         <>
-            <section>
-                <PanelList items={items} />
-            </section>
-            <Divider />
             <section className='message-form'>
                 <h1 className='message-title'>Quick Contact</h1>
                 <div className='message-container'>
@@ -40,6 +43,10 @@ function Contacts() {
                     </div>
                 </div>
                 <input className='message-textbox' placeholder='Good day, I...' />
+            </section>
+            <Divider />
+            <section>
+                <PanelList items={items} />
             </section>
         </>
     )
