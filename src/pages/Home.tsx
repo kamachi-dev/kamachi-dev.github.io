@@ -6,6 +6,7 @@ import {
     Divider,
     PanelList
 } from '../components'
+import { ReactSketchCanvas } from "react-sketch-canvas";
 function Home() {
     const [roleIndex, setRoleIndex] = useState(0)
     const [displayed, setDisplayed] = useState('')
@@ -60,7 +61,7 @@ function Home() {
     ]
     return (
         <>
-            <section className="video-section">
+            <section className="video-section home-section">
                 <div className="info">
                     <h1 className='info-hello'>Hello!</h1>
                     <h2 className='info-name'>My name is Kamachi</h2>
@@ -73,11 +74,25 @@ function Home() {
                 </div>
             </section>
             <Divider />
-            <section>
+            <section className='home-section'>
                 <h1>Summary</h1>
                 <PanelList items={summary} />
             </section>
-            <p>For more information, please visit the other pages</p>
+            <Divider />
+            <section className='home-section'>
+                <h1>Visitor Canvas</h1>
+                <p>Each visitor is entitled to freely draw on this canvas</p>
+                <p>Note: This is public</p>
+                <ReactSketchCanvas
+                    className='canvas'
+                    width='100%'
+                    height='calc(100dvh - 104px)'
+                    strokeWidth={4}
+                    strokeColor="#000000"
+                    canvasColor="#ffffff"
+                />
+            </section>
+            <Divider />
         </>
     )
 }

@@ -4,8 +4,9 @@
     padding: 0;
 }
 
-section {
-    height: fit-content;
+.home-section {
+    height: calc(100dvh - 104px);
+    scroll-snap-align: start;
 }
 
 .video-container {
@@ -51,3 +52,5 @@ section {
 .info-name {}
 
 .info-roles {}
+
+.canvas {}
