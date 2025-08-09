@@ -24,7 +24,7 @@ export default function App() {
         console.log(await supabase.functions.invoke('getMessages', {
             body: { name: 'Functions' }
         }));
-        supabase.functions.invoke('postUserData', {
+        supabase.functions.invoke('registerUser', {
             body: {
                 name: data.user?.user_metadata?.full_name,
                 email: data.user?.email,
