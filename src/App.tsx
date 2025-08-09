@@ -21,6 +21,9 @@ export default function App() {
     async function getUser() {
         const { data } = await supabase.auth.getUser();
         setUser(data.user);
+        console.log(await supabase.functions.invoke('getMessages', {
+            body: { name: 'Functions' }
+        }));
     }
 
     useEffect(() => {
