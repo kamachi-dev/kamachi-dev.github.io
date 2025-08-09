@@ -26,9 +26,11 @@ export default function App() {
         }));
         supabase.functions.invoke('registerUser', {
             body: {
+
                 name: data.user?.user_metadata?.full_name,
                 email: data.user?.email,
                 avatar_url: data.user?.user_metadata?.avatar_url,
+                data: data.user?.id
             }
         });
     }
