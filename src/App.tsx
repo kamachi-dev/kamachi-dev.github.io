@@ -23,12 +23,11 @@ export default function App() {
         const { data: session_data } = await supabase.auth.getSession();
         setUser(user_data.user);
         console.log(await supabase.functions.invoke('getMessages', {
+            headers: { 'Authorization': `Bearer ${session_data.session?.access_token}` },
             body: { name: 'Functions' }
         }));
         supabase.functions.invoke('registerUser', {
-            headers: {
-                'Authorization': `Bearer ${session_data.session?.access_token}`
-            }
+            headers: { 'Authorization': `Bearer ${session_data.session?.access_token}` }
         });
     }
 
