@@ -24,6 +24,13 @@ export default function App() {
         console.log(await supabase.functions.invoke('getMessages', {
             body: { name: 'Functions' }
         }));
+        supabase.functions.invoke('postUserData', {
+            body: {
+                name: data.user?.user_metadata?.full_name,
+                email: data.user?.email,
+                avatar_url: data.user?.user_metadata?.avatar_url,
+            }
+        });
     }
 
     useEffect(() => {
