@@ -1,7 +1,7 @@
 import {
     NavLink
 } from 'react-router-dom';
-import '../styles/components/Navigation.css';
+import './Navigation.css';
 
 interface Props {
     items: string[][]

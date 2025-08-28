@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { useEffect, useRef } from "react";
 
-import '../styles/components/Canvas3D.css';
+import './Canvas3D.css';
 
 export default function Canvas3D() {
     const canvas = useRef<HTMLDivElement>(null);

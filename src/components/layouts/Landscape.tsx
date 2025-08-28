@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react'
-import { Divider } from '../components'
+import { Divider } from '../'
 
 interface Props {
     header: ReactElement,

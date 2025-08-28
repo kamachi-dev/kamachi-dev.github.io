@@ -4,9 +4,9 @@ import { useMediaQuery } from 'react-responsive';
 import type { User } from '@supabase/supabase-js';
 
 // tsx
-import Routing from './Routing';
-import { Portrait, Landscape } from './layouts';
-import { AppContext } from "./AppContext";
+import Routing from './routing';
+import { Portrait, Landscape } from './components/layouts';
+import { AppContext } from "./contexts/AppContext";
 
 //styles
 import './styles/App.css';

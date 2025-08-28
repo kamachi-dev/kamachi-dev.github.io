@@ -5,3 +5,4 @@ export { default as Footer } from './Footer';
 export { default as Navigation } from './Navigation';
 export { default as PanelList } from './PanelList';
 export { default as RatioBar } from './RatioBar';
+export { Landscape, Portrait } from './layouts';

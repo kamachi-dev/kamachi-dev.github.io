@@ -1,7 +1,7 @@
 import {
     useInView
 } from 'react-intersection-observer'
-import '../styles/components/RatioBar.css';
+import './RatioBar.css';
 
 interface Props {
     val: number

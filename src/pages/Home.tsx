@@ -7,6 +7,7 @@ import {
     PanelList
 } from '../components'
 import { ReactSketchCanvas } from "react-sketch-canvas";
+import './Home.css';
 function Home() {
     const [roleIndex, setRoleIndex] = useState(0)
     const [displayed, setDisplayed] = useState('')

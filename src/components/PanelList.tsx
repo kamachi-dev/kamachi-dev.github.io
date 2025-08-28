@@ -1,7 +1,7 @@
 import {
     useInView
 } from 'react-intersection-observer';
-import '../styles/components/PanelList.css';
+import './PanelList.css';
 import {
     NavLink
 } from 'react-router-dom';

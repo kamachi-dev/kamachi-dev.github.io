@@ -9,7 +9,7 @@ import {
     Skills,
     Contacts,
     LogIn
-} from './pages';
+} from '../pages';
 
 export default function Routing() {
     return (

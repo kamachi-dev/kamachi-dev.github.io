@@ -3,6 +3,7 @@ import {
     Divider,
     PanelList
 } from '../components'
+import './Contacts.css';
 
 function Contacts() {
     const items: [React.ReactElement, string][] = [

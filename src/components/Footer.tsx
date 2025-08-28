@@ -1,5 +1,5 @@
-import '../styles/components/Footer.css';
-import { AppContext } from "../AppContext";
+import './Footer.css';
+import { AppContext } from "../contexts/AppContext";
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 

@@ -1,5 +1,6 @@
 import { Canvas3D } from "../components"
 import { supabase } from "../services/client";
+import './LogIn.css';
 
 export default function LogIn() {
     const handleGoogleSignIn = async () => {
