@@ -1,16 +1,10 @@
-# React + TypeScript + Vite
+# kamachi-dev.github.io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website (Machi dev), built with React + Vite and deployed to GitHub Pages.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-## Icons
-<a href="https://www.flaticon.com/free-icons/">Home icons created by Aswell Studio - Flaticon</a>
-
+```bash
+npm install
+npm run dev
+```
